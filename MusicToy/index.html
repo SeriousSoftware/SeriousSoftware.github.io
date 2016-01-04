@@ -1,22 +1,50 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html lang="en" class="ie6 ielt8"><![endif]-->
-<!--[if IE 7 ]>   <html lang="en" class="ie7 ielt8"><![endif]-->
-<!--[if IE 8 ]>   <html lang="en" class="ie8"><![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Scala.JS Barebone</title>
-    <script type="application/javascript" src="/workbench.js"></script>
-    <script type="application/javascript" src="../scala-js-barebone-fastopt.js"></script>
-    <script type="application/javascript" src="../scala-js-barebone-jsdeps.js"></script>
+    <title>Music Toy</title>
+    <meta name="keywords" content="music, grid, sequencer, synthesizer, samples, html5, javascript, google chrome">
+    <link rel="icon" type="image/png" href="resources/favicon.png" />
+    <script language="javascript" src="script/main.js"></script>
+    <script language="javascript" src="script/utils-misc.js"></script>
+    <script language="javascript" src="script/music.js"></script>
+    <script language="javascript" src="script/synth.js"></script>
+    <script language="javascript" src="script/envelope.js"></script>
+    <script language="javascript" src="script/vanalog.js"></script>
+    <script language="javascript" src="script/sampling.js"></script>
+    <script language="javascript" src="script/effects.js"></script>
+    <script language="javascript" src="script/mixer.js"></script>
+    <script language="javascript" src="script/piece.js"></script>
+    <script language="javascript" src="script/musictoy.js"></script>
+    <link rel=stylesheet href="resources/stylesheet.css" type="text/css">
 </head>
+<body bgcolor="#000000">
 
-<body style="margin:32px;padding:0">
-<div>
-    <canvas title="Sierpiński triangle" style="border:1px solid #000000; display: block" id="canvas" width="255" height="255">
-    Your browser does not support HTML 5 Canvas.
-    </canvas>
+<a href="https://github.com/SeriousSoftware/MusicToy">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="resources/forkme.png" alt="Fork me on GitHub">
+</a>
+
+<div class="title">
+    Music Toy: Music Made Simple
 </div>
-<script> example.ScalaJSExample().showDynamicContent(document.getElementById('canvas')); </script>
+
+<div style="height:10px;"></div>
+<div align="center">
+    <div align="center">
+        <canvas id="canvas" width=640 height=340>
+            Your browser does not support the canvas element.
+        </canvas>
+    </div>
+</div>
+
+<div style="height:10px;"></div>
+<div style="margin-left:auto; margin-right:auto; text-align:justify; width:650px;">
+    MusicToy is a minimalist grid sequencer designed to make composition simple and
+    encourage experimentation.
+</div>
+
+<div class="copyright">
+    <!--Copyright &copy; 2016 Serious Software-->
+</div>
+
 </body>
 </html>
+
